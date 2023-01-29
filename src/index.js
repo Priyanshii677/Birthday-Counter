@@ -13,8 +13,8 @@ const clock = () => {
   const days = Math.floor(diff / 60 / 60 / 24);
   inputs[0].value = days;
   inputs[1].value = Math.floor((diff / 60 / 60) % 24);
-  inputs[2].value = Math.floor(((diff / 60) % 60) % 24);
-  inputs[3].value = Math.floor(((diff % 60) % 60) % 24);
+  inputs[2].value = Math.floor((diff / 60) % 60);
+  inputs[3].value = Math.floor(diff % 60);
   console.log(inputs[1].value);
   console.log(days);
 };
