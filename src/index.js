@@ -19,4 +19,6 @@ const clock = () => {
   console.log(days);
 };
 
-clock();
+setInterval(() => {
+  clock();
+}, 1000);
